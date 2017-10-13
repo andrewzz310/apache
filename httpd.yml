@@ -1,11 +1,11 @@
 - name: This sets up an httpd webserver
   hosts: web1.rhpds.opentlc.com
   tasks:
-  - name: Install the httpd rpm
-    yum: name=httpd
-  - name: start the httpd service
-    service: name=httpd state=started
-  - name: Open port 80
-    firewalld: service=http permanent=true state=enabled
-  - name: start the firwalld service
-    service: name=firewalld state=resarted
+     - name: Install the httpd rpm
+       yum: name=httpd
+     - name: start the httpd service
+       service: name=httpd state=started
+     - name: Open port 80
+       firewalld: service=http permanent=true state=enabled
+     - name: start the firwalld service
+       service: name=firewalld state=resarted
