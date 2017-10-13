@@ -1,6 +1,6 @@
 - name: This sets up an httpd webserver
   hosts: web1.rhpds.opentlc.com
-  taks:
+  tasks:
   - name: Install the httpd rpm
     yum: name=httpd
   - name: start the httpd service
