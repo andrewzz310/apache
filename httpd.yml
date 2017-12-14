@@ -2,8 +2,7 @@
 - 
   hosts: web1.rhpds.opentlc.com
   name: "This sets up an httpd webserver"
-  become: yes
-  tasks: 
+    tasks: 
     - 
       name: "Install the httpd rpm"
       yum: name=httpd
