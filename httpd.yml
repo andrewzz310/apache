@@ -2,7 +2,7 @@
 - 
   hosts: web1.rhpds.opentlc.com
   name: "This sets up an httpd webserver"
-  become: true
+  become: yes
   tasks: 
     - 
       name: "Install the httpd rpm"
