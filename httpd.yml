@@ -1,7 +1,6 @@
 - name: This sets up an httpd webserver
   hosts: web1.rhpds.opentlc.com
-  ansible_become=false
-  tasks:
+    tasks:
      - name: Install the httpd rpm
        yum: name=httpd
      - name: start the httpd service
