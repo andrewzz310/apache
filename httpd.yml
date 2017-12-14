@@ -2,7 +2,6 @@
   hosts: web1.rhpds.opentlc.com
   become: yes
   become_user: root
-  become_method: su
   tasks:
      - name: Install the httpd rpm
        yum: name=httpd
